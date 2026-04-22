@@ -8,7 +8,7 @@ export default function GetAQuotePage() {
 
   return (
     <div className="flex flex-col w-full bg-background min-h-screen">
-      <section className="pt-32 pb-16 px-6 lg:px-8 bg-foreground/5 text-center">
+      <section className="pt-44 pb-16 px-6 lg:px-8 bg-foreground/5 text-center md:pt-52">
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight uppercase">{copy.header.title}</h1>
           <p className="text-xl text-foreground/70">
