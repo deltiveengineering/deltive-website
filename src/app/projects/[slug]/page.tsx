@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { projects, getProjectBySlug } from '@/content/projects';
 import { ProjectGallery, ProjectHeroMedia } from '@/components/project/ProjectMedia';
 
+const siteUrl = 'https://deltiveengineering.com';
+
 export async function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
@@ -22,7 +24,23 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: project.title,
-    description: project.shortDescription,
+    description: `${project.shortDescription} A Deltive Engineering product development project.`,
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
+    openGraph: {
+      title: `${project.title} | Deltive Engineering`,
+      description: project.shortDescription,
+      url: `${siteUrl}/projects/${project.slug}`,
+      siteName: 'Deltive Engineering',
+      images: [
+        {
+          url: project.images.cover,
+          alt: `${project.title} by Deltive Engineering`,
+        },
+      ],
+      type: 'article',
+    },
   };
 }
 

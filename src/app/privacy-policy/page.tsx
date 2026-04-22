@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
+  description: 'Privacy policy for the Deltive Engineering website.',
+  alternates: {
+    canonical: '/privacy-policy',
+  },
 };
 
 export default function PrivacyPolicyPage() {

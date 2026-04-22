@@ -1,9 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { projects } from "@/content/projects";
 import { services } from "@/content/services";
 import { siteCopy } from "@/content/site-copy";
 import { Target, PenTool, Cog, Factory, ArrowRight, ChevronDown } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Deltive Engineering | Product Development Studio in Ghent",
+  },
+  description:
+    "Deltive Engineering designs, engineers and industrializes physical products, prototypes and technical installations from concept to manufacturing.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const clientLogos = [
   { src: '/images/brand_assets/client logos/53b11647-924c-4362-b21b-e0aff940a538 (1).png', alt: 'Client 1' },

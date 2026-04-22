@@ -7,7 +7,10 @@ import { ArrowRight, CheckCircle2, Cog, Factory, PenTool, Target } from 'lucide-
 
 export const metadata: Metadata = {
   title: 'Services',
-  description: 'We design, engineer and industrialize end to end.',
+  description: 'Deltive Engineering services for strategy, industrial design, mechanical engineering, prototyping and manufacturing support.',
+  alternates: {
+    canonical: '/services',
+  },
 };
 
 const serviceIcons: Record<string, React.ReactNode> = {

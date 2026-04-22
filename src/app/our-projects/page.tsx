@@ -5,8 +5,11 @@ import { projects } from '@/content/projects';
 import { siteCopy } from '@/content/site-copy';
 
 export const metadata: Metadata = {
-  title: 'Our Projects',
-  description: 'Explore our portfolio of end-to-end product development.',
+  title: 'Projects',
+  description: 'Explore Deltive Engineering projects in product design, mechanical engineering, prototyping and manufacturing-ready product development.',
+  alternates: {
+    canonical: '/our-projects',
+  },
 };
 
 export default function OurProjectsPage() {
